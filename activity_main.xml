@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/category_Background">
+    <!--tools:context="com.example.android.tourguide_take_a_look.com.example.android.RiversActivities.MainActivity"
+    -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/category_Background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/riviere_soud_ouest"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/dordogne"
+        style="@style/CategoryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:background="@color/category_Dordogne"
+        android:text="@string/category_rivers_dordogne"/>
+
+    <TextView
+        android:id="@+id/garonne"
+        style="@style/CategoryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@color/category_Garonne"
+        android:text="@string/category_rivers_garonne"
+
+        />
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:id="@+id/tarn"
+        style="@style/CategoryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/category_Tarn"
+        android:text="@string/category_rivers_tarn"
+        android:layout_below="@id/garonne"
+        android:layout_alignRight="@id/garonne"
+
+       />
+
+    <TextView
+        android:id="@+id/lot"
+        style="@style/CategoryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/garonne"
+        android:layout_alignParentRight="true"
+        android:background="@color/category_Lot"
+        android:text="@string/category_rivers_lot"/>
+    </RelativeLayout>
+
+
+
